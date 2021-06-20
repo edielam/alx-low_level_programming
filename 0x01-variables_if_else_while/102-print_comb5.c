@@ -6,23 +6,43 @@
 
 int main(void)
 {
-int a;
-int b;
+	int a = 48, b = 48, c = 48, d = 49;
 
-for (a = 48; a <= 57; a++)
-{
-for (b = 48; b <= 57; b++)
-{
-if (a != b && a < b)
-{putchar(a);
-putchar(b);
-if (a != 56)
-{putchar(44);
-putchar(32);
-}}
-
-}
-}
-putchar(10);
-return (0);
+	while (a < 58)
+	{
+		while (b < 58)
+		{
+			while (c < 58)
+			{
+				while (d < 58)
+				{
+					putchar(a);
+					putchar(b);
+					putchar(32);
+					putchar(c);
+					putchar(d);
+					if (!(a == 57 &&
+						b == 56 &&
+						c == 57 &&
+						d == 57))
+					{
+						putchar(44);
+						putchar(' ');
+					}
+					d++;
+				}
+				c++;
+				d = 48;
+			}
+			b++;
+			b = a;
+			d = b + 1;
+		}
+		a++;
+		b = 48;
+		c = a;
+		d = b + 1;
+	}
+	putchar(10);
+	return (0);
 }
