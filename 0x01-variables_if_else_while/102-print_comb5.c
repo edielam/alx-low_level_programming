@@ -6,43 +6,43 @@
 
 int main(void)
 {
-	int a = 48, b = 48, c = 48, d = 49;
+	int i = 48, j = 48, y = 48, z = 49;
 
-	while (a < 58)
+	while (i < 58)
 	{
-		while (b < 58)
+		while (j < 58)
 		{
-			while (c < 58)
+			while (y < 58)
 			{
-				while (d < 58)
+				while (z < 58)
 				{
-					putchar(a);
-					putchar(b);
-					putchar(32);
-					putchar(c);
-					putchar(d);
-					if (!(a == 57 &&
-						b == 56 &&
-						c == 57 &&
-						d == 57))
+					putchar(i);
+					putchar(j);
+					putchar(' ');
+					putchar(y);
+					putchar(z);
+					if (!(i == 57 &&
+						j == 56 &&
+						y == 57 &&
+						z == 57))
 					{
-						putchar(44);
+						putchar(',');
 						putchar(' ');
 					}
-					d++;
+					z++;
 				}
-				c++;
-				d = 48;
+				y++;
+				z = 48;
 			}
-			b++;
-			b = a;
-			d = b + 1;
+			j++;
+			y = i;
+			z = j + 1;
 		}
-		a++;
-		b = 48;
-		c = a;
-		d = b + 1;
+		i++;
+		j = 48;
+		y = i;
+		z = j + 1;
 	}
-	putchar(10);
+	putchar('\n');
 	return (0);
 }
