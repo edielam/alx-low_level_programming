@@ -11,7 +11,7 @@ int b;
 
 for (a = 48; a <= 57; a++)
 {putchar(a); }
-for (b = 65; b <= 70; b++)
+for (b = 'a'; b <= 'f'; b++)
 {putchar(b); }
 putchar(10);
 return (0);
