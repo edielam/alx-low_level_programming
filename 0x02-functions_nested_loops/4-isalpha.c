@@ -8,15 +8,11 @@
 
 int _isalpha(int c)
 {
-int b[] = {91, 92, 93, 94, 95, 96};
-int i;
-for (i = 0; i < 6; i++)
-{
-if (c >= 65 && c <= 122 && c != b[i])
-{
-return (1);
-}
-return (0);
-}
+	if (c >= 65 && c <= 90)
+		return (1);
+	else if (c >= 97 && c <= 122)
+		return (1);
+	else
+		return (0);
 }
 
