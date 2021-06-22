@@ -16,9 +16,7 @@ if (c >= 65 && c <= 122 && c != b[i])
 {
 return (1);
 }
-else
-{
 return (0);
 }
 }
-}
+
