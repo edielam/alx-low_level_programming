@@ -4,7 +4,7 @@
  * Return: always zero
  */
 
-void times_table(void);
+void times_table(void)
 {
 int i, j;
 for (i = 48; i < 58; i++)
