@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * jack_bauer - printing the minutes
- * Return : 0 
+ * Return : 0
  */
 
 void jack_bauer(void)
@@ -15,7 +15,7 @@ for (k = 48; j <= 53; k++)
 {
 for (l = 48; l <= 57; l++)
 {
-if (i == 50 && j == 52)
+if (i <= 50 && j <= 52)
 break;
 _putchar(i);
 _putchar(j);
