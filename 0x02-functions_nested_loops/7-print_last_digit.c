@@ -11,9 +11,9 @@ int j;
 j = n % 10;
 if (j < 0)
 {
-_putchar(-n + '0');
- return (-n); }
+_putchar(-j + '0');
+ return (-j); }
 else
-{_putchar(n + '0');
-return (n); }
+{_putchar(j + '0');
+return (j); }
 }
