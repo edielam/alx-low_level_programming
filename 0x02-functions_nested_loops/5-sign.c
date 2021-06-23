@@ -13,5 +13,5 @@ _putchar('-');
 else if (n == 0)
 _putchar('0');
 else
-return ('+');
+_putchar('+');
 }
