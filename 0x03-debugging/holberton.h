@@ -16,5 +16,6 @@ void times_table(void);
 int add(int i, int j);
 void positive_or_negative(int i);
 int largest_number(int a, int b, int c);
+void print_remaining_days(int month, int day, int year);
 
 #endif /* HOLBERTON_H */
