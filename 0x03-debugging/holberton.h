@@ -13,5 +13,6 @@ void jack_bauer(void);
 void times_table(void);
 int add(int i, int j);
 void positive_or_negative(int i);
+int largest_number(int a, int b, int c);
 
 #endif /* HOLBERTON_H */
