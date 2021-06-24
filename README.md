@@ -1,1 +1,1 @@
-### This repo containsmy low level programming projects(C-programming)
+### This repo contains my low level programming projects(C-programming)
