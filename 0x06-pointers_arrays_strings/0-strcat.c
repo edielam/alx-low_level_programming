@@ -8,13 +8,24 @@
 
 char _strcat(char *dest, char *src)
 {
-int id, jd, kc, lc;
-for(id = 0; dest[id] != 0; id++)
-for (kc = 0; src[kc] != 0; kc++)
-lc = 0;
-for (jd = id; jd < (id + kc); jd++)
-{dest[jd] = src[lc];
-lc++; }
-dest[id + kc] = 0;
-return (dest);
+    //Pointer should not null pointer
+    if((dest == NULL) && (src == NULL))
+        return NULL;
+    //Create copy of s1
+    char *start = dest;
+    //Find the end of the destination string
+    while(*start != '\0')
+    {
+        start++;
+    }
+    //Now append the source string characters
+    //until not get null character of s2
+    while(*src != '\0')
+    {
+        *start++ = *src++;
+    }
+    //Append null character in the last
+    *start = '\0';
+    return dest;
 }
+
