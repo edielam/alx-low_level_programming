@@ -8,6 +8,10 @@
 
 char _strcat(char *dest, char *src)
 {
+char k;
+k = strcat(dest,  src);
+return (k);
+/**
 int i, j, k;
 i = 0;
 j = strlen(dest);
@@ -17,4 +21,5 @@ for (i = 0; i < j; i++)
 for (i = 0; i <= k; i++)
 { _putchar(src[0]); }
 return (0);
+*/
 }
