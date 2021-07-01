@@ -8,18 +8,13 @@
 
 char _strcat(char *dest, char *src)
 {
-char k;
-k = strcat(dest,  src);
-return (k);
-/**
-int i, j, k;
-i = 0;
-j = strlen(dest);
-k = strlen(src);
-for (i = 0; i < j; i++)
-{_putchar(dest[i]); }
-for (i = 0; i <= k; i++)
-{ _putchar(src[0]); }
-return (0);
-*/
+int id, jd, kc, lc;
+for(id = 0; dest[id] != 0; id++)
+for (kc = 0; src[kc] != 0; kc++)
+lc = 0;
+for (jd = id; jd < (id + kc); jd++)
+{dest[jd] = src[lc];
+lc++; }
+dest[id + kc] = 0;
+return (dest);
 }
