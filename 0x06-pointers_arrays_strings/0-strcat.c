@@ -6,21 +6,26 @@
  *
  * Return: Always 0.
  */
+
 char *_strcat(char *dest, char *src)
 {
-int c_src;
-int c_dest;
-int i_src;
-int i_dest;
-
-for (c_dest = 0; dest[c_dest] != 0; c_dest++)
-for (c_src = 0; src[c_src] != 0; c_src++)
-i_src = 0;
-for (i_dest = c_dest; i_dest < (c_src + c_dest); i_dest++)
+/* Pointer should not be a null pointer */
+if ((dest == NULL) && (src == NULL))
+return (NULL);
+/* Create copy of dest */
+char *start = dest;
+/* Find the end of the destination string */
+while (*start != '\0')
 {
-dest[i_dest] = src[i_src];
-i_src++;
+start++;
 }
-dest[c_src + c_dest] = 0;
+/* Now append the source string characters */
+/* until not get null character of src */
+while (*src != '\0')
+{
+*start++ = *src++;
+}
+/* Append null character in the last */
+*start = '\0';
 return (dest);
 }
