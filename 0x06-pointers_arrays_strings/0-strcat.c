@@ -9,10 +9,10 @@
 
 char *_strcat(char *dest, char *src)
 {
-/* Pointer should not null pointer */
+/* Pointer should not be a null pointer */
 if ((dest == NULL) && (src == NULL))
 return (NULL);
-/* Create copy of s1 */
+/* Create copy of dest */
 char *start = dest;
 /* Find the end of the destination string */
 while (*start != '\0')
