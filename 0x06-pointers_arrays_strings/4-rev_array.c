@@ -9,15 +9,16 @@
 
 void reverse_array(int *a, int n)
 {
-int aux[n];
-int i;
-for (i = 0; i < n; i++)
-{
-aux[n - 1 - i] = a[i];
-}
-for (i = 0; i < n; i++)
-{
-a[i] = aux[i];
-}
-}
+	int i, j, d;
 
+	if (n % 2 != 0)
+		d = n + 1;
+	else
+		d = n;
+	for (i = 0; i < d / 2; i++)
+	{
+		j = a[i];
+		a[i] = a[n - 1 - i];
+		a[n - 1 - i] = j;
+	}
+}
