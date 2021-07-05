@@ -1,0 +1,12 @@
+#include "holberton.h"
+/**
+ * _memset - fill memory with a constant byte
+ * @s: input 1
+ * @b: input b
+ * @n: input 3
+ * Return: zero
+ */
+
+char *_memset(char *s, char b, unsigned int n)
+{
+  
