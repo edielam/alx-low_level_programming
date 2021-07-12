@@ -4,7 +4,7 @@
 
 /**
  * main - add numbers
- * @agrc: arg count
+ * @argc: arg count
  * @argv: array of args
  * Return: always 0
  */
