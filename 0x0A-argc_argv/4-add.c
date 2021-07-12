@@ -11,25 +11,30 @@
 
 int main(int argc, char *argv[])
 {
-int i, j, sum = 0;
+	int sum;
+	int count;
+	int i;
 
-for (i = 0; i < argc; i++)
-{
-if (!(isdigit(argv[i])))
-{
-printf("Error\n");
-break;
-}
-return (1);
-}
-if (argc < 2)
-{
-printf("0\n");
-}
-for (j = 1; j < argc; j++)
-{
-sum += atoi(argv[j]);
-printf("%d\n", sum);
-}
-return (0);    
+	count = 1;
+	sum = 0;
+	if (argc == 1)
+	{
+		printf("0\n");
+		return (0);
+	}
+	while (count < argc)
+	{
+		for (i = 0; argv[count][i] != '\0'; i++)
+		{
+			if (!(isdigit(argv[count][i])))
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+		sum += atoi(argv[count]);
+		count++;
+	}
+	printf("%d\n", sum);
+	return (0);
 }
