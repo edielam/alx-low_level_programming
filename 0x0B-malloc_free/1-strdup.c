@@ -19,5 +19,5 @@ p = s;
 while (*str)
 *p++ = *str++;
 *p = '\0';
-return (s)
+return (s);
 }
