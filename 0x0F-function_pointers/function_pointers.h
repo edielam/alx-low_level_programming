@@ -1,5 +1,6 @@
 #ifndef FUNCTIONS
 #define FUNCTIONS
+
 #include <stddef.h>
 
 int _putchar(char);
