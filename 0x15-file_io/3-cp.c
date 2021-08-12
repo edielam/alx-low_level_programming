@@ -1,3 +1,4 @@
+#include "main.h"
 #include "holberton.h"
 #define BUFFLEN (1024)
 /**
